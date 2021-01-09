@@ -1,0 +1,47 @@
+[eventBus]Subscribing Inventory to channel adjustPrices
+[eventBus]Subscribing Basket to channel priceUpdate
+[Inventory]
+  Item: Apple           Price: $1.99
+  Item: Banana          Price: $2.99
+  Item: Avocado         Price: $5.35
+  Item: Pear            Price: $3.55
+  Item: Candy           Price: $0.99
+  Item: Soda            Price: $0.99
+[Basket]
+  Item: Apple           Price: $1.99
+  Item: Avocado         Price: $5.35
+  Item: Soda            Price: $0.99
+[eventBus]Publishing event adjustPrices to entity Inventory sent from System
+[Inventory]Recieved event adjustPrices from System
+[Inventory]Adjusting price of all items to 85.0% of original value
+[eventBus]Publishing event priceUpdate to entity Basket sent from Inventory
+[Basket]Recieved event priceUpdate from Inventory
+[Basket]Updating price of items in basket
+[Inventory]
+  Item: Apple           Price: $1.69
+  Item: Banana          Price: $2.54
+  Item: Avocado         Price: $4.55
+  Item: Pear            Price: $3.02
+  Item: Candy           Price: $0.84
+  Item: Soda            Price: $0.84
+[Basket]
+  Item: Apple           Price: $1.69
+  Item: Avocado         Price: $4.55
+  Item: Soda            Price: $0.84
+[Basket]Checkout finalized, locking price of customer's basket
+[eventBus]Unsubscribing Basket from channel priceUpdate
+[eventBus]Publishing event adjustPrices to entity Inventory sent from System
+[Inventory]Recieved event adjustPrices from System
+[Inventory]Adjusting price of all items to 145.0% of original value
+[Inventory]
+  Item: Apple           Price: $2.45
+  Item: Banana          Price: $3.69
+  Item: Avocado         Price: $6.59
+  Item: Pear            Price: $4.38
+  Item: Candy           Price: $1.22
+  Item: Soda            Price: $1.22
+[Basket]
+  Item: Apple           Price: $1.69
+  Item: Avocado         Price: $4.55
+  Item: Soda            Price: $0.84
+[Finished in 3.2s]

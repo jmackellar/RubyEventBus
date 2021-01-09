@@ -1,2 +1,2 @@
 # RubyEventBus
- A simple eventBus with example usage written in Ruby
+A simple eventBus with example usage written in Ruby
